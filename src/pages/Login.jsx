@@ -27,7 +27,7 @@ const Login = () => {
           ? "Admin login successful"
           : `Welcome, ${matchedUser.name}`
       );
-      navigate(matchedUser.role === "admin" ? "/admin" : "/checkout");
+      navigate(matchedUser.role === "admin" ? "/admin" : "/cart");
     } else {
       toast.error("You don't have an Account. Register Now");
     }
