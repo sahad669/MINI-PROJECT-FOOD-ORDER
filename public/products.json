@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Margherita Pizza",
+    "price": 24.99,
+    "image": "https://media.istockphoto.com/id/1438618008/photo/top-view-of-a-pizza-margherita-on-a-table.jpg?s=612x612&w=0&k=20&c=W1s4eLCjH8svi22gTQBrll31GcUPmrru8z7ZCVD0bKo=",
+    "category": "vegetarian"
+  },
+  {
+    "id": 2,
+    "title": "Chicken Biryani",
+    "price": 34.50,
+    "image": "https://media.istockphoto.com/id/501150349/photo/chicken-biryani-11.jpg?s=612x612&w=0&k=20&c=w6mDnUx8MnH3rnP9bR0VfWRwrODcbTz-6U07o3Zrs4o=",
+    "category": "non-vegetarian"
+  },
+  {
+    "id": 3,
+    "title": "Vegetable Spring Rolls",
+    "price": 14.99,
+    "image": "https://media.istockphoto.com/id/1313085999/photo/fried-vegetable-spring-rolls-with-sweet-chili-and-soya-sauce-on-wooden-board.jpg?s=612x612&w=0&k=20&c=OM1OfrBS7D4666h9eZtztqFmQW0Ch15bcMcNbYhUBIo=",
+    "category": "chinese"
+  },
+  {
+    "id": 4,
+    "title": "Grilled Chicken",
+    "price": 42.00,
+    "image": "https://media.istockphoto.com/id/157526986/photo/roast-chicken-on-the-bbq.jpg?s=612x612&w=0&k=20&c=T40SCrxhnikibAiTVPD70zm3JJeLkUau9BwdnfEQRZk=",
+    "category": "non-vegetarian"
+  },
+  {
+    "id": 5,
+    "title": "Paneer Butter Masala",
+    "price": 27.50,
+    "image": "https://media.istockphoto.com/id/2177168063/photo/closeup-footage-of-the-indian-paneer-butter-masala-dish-on-wooden-table-against-blur.jpg?s=612x612&w=0&k=20&c=bSxnqgwVmAL5dTAICdZA4v3riurHhNz8wS7qPqOn0OY=",
+    "category": "vegetarian"
+  },
+  {
+    "id": 6,
+    "title": "Chicken Manchurian",
+    "price": 31.75,
+    "image": "https://media.istockphoto.com/id/1072951288/photo/indian-chilli-chicken-dry-served-in-a-plate-over-moody-background-selective-focus.jpg?s=612x612&w=0&k=20&c=WkAg8lRGsRa4XLt90XdPKIdo5qGe_SfnGzqrNi8sp9g=",
+    "category": "chinese"
+  },
+  {
+    "id": 7,
+    "title": "Veg Fried Rice",
+    "price": 19.99,
+    "image": "https://media.istockphoto.com/id/1292617473/photo/healthy-and-tasty-veg-fried-rice-made-of-mixed-veggies-served-in-bowl-over-a-rustic-wooden.jpg?s=612x612&w=0&k=20&c=p2Vo5rHfM0TqMhywdGKOJY2Vd89JPb4szOLMe3f4zIQ=",
+    "category": "chinese"
+  },
+  {
+    "id": 8,
+    "title": "Mutton Curry",
+    "price": 39.99,
+    "image": "https://media.istockphoto.com/id/1133533545/photo/mutton-stew.jpg?s=612x612&w=0&k=20&c=C1incsYfubXxdmojnsMsCUyNY71vE7An504UHpFcX3Y=",
+    "category": "non-vegetarian"
+  },
+  {
+    "id": 9,
+    "title": "Chole Bhature",
+    "price": 22.00,
+    "image": "https://media.istockphoto.com/id/1328524499/photo/katlambe-chole.jpg?s=612x612&w=0&k=20&c=HDi8bCqvSsObfyfeVMQ2J6noJvazvKKtY5kKaVgvYCQ=",
+    "category": "vegetarian"
+  },
+  {
+    "id": 10,
+    "title": "Schezwan Noodles",
+    "price": 25.00,
+    "image": "https://media.istockphoto.com/id/1157756469/photo/chow-mein-noodles-and-vegetables-dish-with-wooden-chopsticks.jpg?s=612x612&w=0&k=20&c=4UL1-7R1ns3lsT8zMl5hrGfT4Pos4lvC_MlSJAW-wvM=",
+    "category": "chinese"
+  },
+  {
+    "id": 11,
+    "title": "Fish Curry",
+    "price": 36.99,
+    "image": "https://media.istockphoto.com/id/1184625171/photo/fish-curry.jpg?s=612x612&w=0&k=20&c=0HzU7r8HaUpmEhi4TBN9keqJy7hFyRhbBGLonxaGqN0=",
+    "category": "non-vegetarian"
+  },
+  {
+    "id": 12,
+    "title": "Aloo Gobi",
+    "price": 20.50,
+    "image": "https://media.istockphoto.com/id/1091565958/photo/spicy-potato-curry-indian-recipe.jpg?s=612x612&w=0&k=20&c=km419oVyfT731IrxaqSqUYGS5vgN1K1f1Xb32sw1Jms=",
+    "category": "vegetarian"
+  }
+]
