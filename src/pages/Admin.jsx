@@ -1,4 +1,4 @@
-// pages/Admin.js
+
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
@@ -12,7 +12,7 @@ const Admin = () => {
   const [isEditing, setIsEditing] = useState(false);
   const [editId, setEditId] = useState(null);
   const dispatch = useDispatch();
-  const products = useSelector((state) => state.products.filtered); // use filtered instead of all
+  const products = useSelector((state) => state.products.filtered); 
 
   const [form, setForm] = useState({
     title: "",
@@ -171,20 +171,3 @@ export default Admin;
 
 
 
-// if (!localData || JSON.parse(localData).length === 0) {
-//                     state.items = action.payload;
-//                     localStorage.setItem('productList', JSON.stringify(state.items));
-//                 } else {
-//                     state.items = JSON.parse(localData);
-
-//                 }
-// const localData = localStorage.getItem('productList');
-
-
-//                 if (!localData || JSON.parse(localData).length === 0) {
-//                     state.items = action.payload;
-//                     localStorage.setItem('productList', JSON.stringify(state.items));
-//                 } else {
-//                     state.items = JSON.parse(localData);
-
-//                 }

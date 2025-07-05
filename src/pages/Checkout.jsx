@@ -70,6 +70,12 @@ const Checkout = () => {
               >
                 ✅ Confirm Order
               </button>
+              <button
+                onClick={() => navigate("/cart")}
+                className="bg-transparent border border-yellow-500 text-yellow-400 hover:bg-yellow-500 hover:text-black px-6 py-2 m-3 rounded text-lg font-semibold transition"
+              >
+                🔙 Back to Cart
+              </button>
             </>
           )}
         </>
@@ -94,8 +100,3 @@ const Checkout = () => {
 };
 
 export default Checkout;
-
-
-
-
-
