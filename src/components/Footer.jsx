@@ -12,7 +12,7 @@ const Footer = () => {
 
         <div className="flex gap-5 text-xl">
           <a
-            href="https://github.com/sahad669"
+            href="https://github.com/sahad669/branch.git"
             target="_blank"
             rel="noreferrer"
             className="hover:text-gray-400"
@@ -30,7 +30,7 @@ const Footer = () => {
             <FaLinkedinIn />
           </a>
           <a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/sahad8834?igsh=ZWxvNnQxYjJpbGtr"
             target="_blank"
             rel="noreferrer"
             className="hover:text-pink-500"
