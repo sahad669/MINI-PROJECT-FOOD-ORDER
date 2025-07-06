@@ -3,10 +3,9 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { Provider } from "react-redux";
-import { Store } from "./app/Store.js";
+import { Store } from "./app/Store.js";  // ✅ Match this with your actual file name
 import { BrowserRouter } from "react-router-dom";
 import './App.css';
-
 
 const presetAdmin = () => {
   const users = JSON.parse(localStorage.getItem("userList")) || [];
@@ -25,14 +24,15 @@ const presetAdmin = () => {
   }
 };
 
-presetAdmin(); 
+presetAdmin();
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Provider Store={Store}>
+    <Provider store={Store}> 
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </Provider>
   </StrictMode>
 );
+
