@@ -5,28 +5,28 @@ import { Link, useNavigate } from "react-router-dom";
 import { logoutUser } from "../features/authSlice";
 import { toggleTheme } from "../features/themeSlice";
 
-const Navbar = ({ darkMode }) => {
+const Navbar = () => {
   const cart = useSelector((state) => state.cart.items);
   const user = useSelector((state) => state.auth.currentUser);
+  const darkMode = useSelector((state) => state.theme.darkMode);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
   const cartQuantity = cart.reduce((total, item) => total + item.qty, 0);
 
   return (
-    <nav className="fixed top-0 w-full z-50 shadow-md  bg-black">
+    <nav className={`fixed top-0 w-full z-50 shadow-md ${darkMode ? "bg-gray-900" : "bg-black"}`}>
       <div className="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 h-16">
+        {/* Logo */}
         <h1
-          className={`${
-            darkMode
-              ? "text-2xl sm:text-3xl font-extrabold text-yellow-500 dark:text-white tracking-wide"
-              : "text-orange-600 text-2xl sm:text-3xl font-extrabold dark:text-white tracking-wide"
+          className={`text-2xl sm:text-3xl font-extrabold tracking-wide ${
+            darkMode ? "text-yellow-500" : "text-orange-600"
           }`}
         >
           TastyBite
         </h1>
 
-        {/* 🌗 Modern Toggle Switch */}
+        {/* Theme Toggle */}
         <div className="flex items-center gap-2">
           <span className="text-xs text-yellow-400">☀️</span>
           <label className="relative inline-flex items-center cursor-pointer">
@@ -36,17 +36,15 @@ const Navbar = ({ darkMode }) => {
               onChange={() => dispatch(toggleTheme())}
               className="sr-only peer"
             />
-            <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-focus:ring-4 peer-focus:ring-yellow-500 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-yellow-500"></div>
+            <div className="w-11 h-6 bg-gray-300 rounded-full peer peer-focus:ring-4 peer-focus:ring-yellow-500 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-yellow-500"></div>
           </label>
           <span className="text-xs text-yellow-400">🌙</span>
         </div>
 
-        {/* Navigation Links */}
+        {/* Links */}
         <div
-          className={`${
-            darkMode
-              ? "flex items-center gap-6 text-xl sm:text-base font-medium text-yellow-500 dark:text-gray-300"
-              : "flex items-center gap-6 text-xl sm:text-base font-medium text-orange-600 dark:text-gray-300"
+          className={`flex items-center gap-6 text-lg font-medium ${
+            darkMode ? "text-yellow-500" : "text-orange-600"
           }`}
         >
           <Link to="/" className="hover:text-blue-500 transition duration-200">
@@ -69,7 +67,7 @@ const Navbar = ({ darkMode }) => {
             </Link>
           ) : (
             <>
-              <span className="text-yellow-500 dark:text-gray-100">
+              <span className="text-yellow-400">
                 Hi, <span className="font-semibold">{user?.name}</span>
               </span>
               <button
@@ -103,6 +101,7 @@ const Navbar = ({ darkMode }) => {
 };
 
 export default Navbar;
+
 
 // import React, { useState } from "react";
 // import { FaCartArrowDown, FaBars, FaTimes } from "react-icons/fa";
