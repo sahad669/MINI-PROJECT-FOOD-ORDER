@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 const Footer = () => {
    const { darkMode } = useSelector((state) => state.theme);
   return (
-    <footer className={`bg-black  ${darkMode ? "text-yellow-500" :"text-orange-600"} py-6 mt-10`}>
+    <footer className={`${darkMode ? "text-yellow-500 bg-gray-900" :"text-orange-600 bg-black"} py-6 mt-10`}>
       <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
         <p className="text-sm mb-4 sm:mb-0">
           &copy; {new Date().getFullYear()} Tastybite. All rights reserved.
@@ -58,3 +58,4 @@ export default Footer;
 //     }
 //   ]
 // }
+
