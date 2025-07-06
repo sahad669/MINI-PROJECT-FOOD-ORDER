@@ -27,7 +27,7 @@ const Checkout = () => {
     <div className="min-h-screen bg-black text-yellow-300 flex flex-col items-center justify-center px-4 py-10">
       {!orderConfirmed ? (
         <>
-          <h1 className="text-3xl font-bold text-green-400 mb-6">
+          <h1 className="text-3xl font-bold text-green-400 p-5 mb-6">
             ✅ Checkout Summary
           </h1>
           {cartItems.length === 0 ? (
