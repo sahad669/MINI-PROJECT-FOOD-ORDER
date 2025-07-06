@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { Provider } from "react-redux";
-import { store } from "./app/Store.js";
+import { Store } from "./app/Store.js";
 import { BrowserRouter } from "react-router-dom";
 import './App.css';
 
@@ -29,7 +29,7 @@ presetAdmin();
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Provider store={store}>
+    <Provider Store={Store}>
       <BrowserRouter>
         <App />
       </BrowserRouter>

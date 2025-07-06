@@ -6,7 +6,7 @@ import themeReducer from "../features/themeSlice"
 
  
 
-export const store = configureStore({
+export const Store = configureStore({
     reducer: {
         products: productReducer,
         cart: cartReducer,
