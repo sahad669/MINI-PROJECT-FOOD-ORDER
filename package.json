@@ -2,7 +2,7 @@
   "name": "food_order_app",
   "private": true,
   "version": "0.0.0",
-   "homepage": "https://github.com/sahad669/Food-order-website-frontend.git",
+  "homepage": "https://sahad669.github.io/Food-order-website-frontend/",
   "type": "module",
   "scripts": {
     "dev": "vite",
