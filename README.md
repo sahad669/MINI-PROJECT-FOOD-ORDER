@@ -1,12 +1,45 @@
-# React + Vite
+# 🍔 Mini Project – Food Order Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Live Demo 👉 [mini-project-food-order.vercel.app](https://mini-project-food-order.vercel.app/)
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React + Vite
+- **State Management:** Redux Toolkit
+- **Routing:** React Router DOM
+- **Styling:** Tailwind CSS
+- **Icons:** React Icons
+- **Data Source:** Fake Store API (`https://fakestoreapi.com/products`)
+- **Hosting:** Vercel
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 🛍️ Browse products (menu items)
+- ➕ Add items to cart
+- 📝 Adjust quantity (1–5 per item)
+- 🗑️ Remove items / clear cart
+- 🔐 Login & Register (with localStorage)
+- 🛑 Protected routes for:
+  - ✅ Checkout (requires login)
+  - ✅ Admin Panel (requires admin)
+- 🧾 Checkout success page with confirmation
+- ⚙️ Admin Panel:
+  - Add / Edit / Delete products
+  - Data stored in Redux & localStorage
+- 🌙 Dark mode compatible
+
+---
+
+## 🧑‍💻 Admin Credentials
+
+- **Email:** `admin@foodie.com`
+- **Password:** `admin@123`
+
+---
+
+## 📁 Folder Structure (Simplified)
+
