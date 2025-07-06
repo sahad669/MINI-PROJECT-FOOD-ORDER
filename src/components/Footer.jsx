@@ -49,13 +49,5 @@ export default Footer;
 
 
 
-// {
-//   "$schema": "https://openapi.vercel.sh/vercel.json",
-//   "rewrites": [
-//     {
-//       "source": "/(.*)",
-//       "destination": "/index.html"
-//     }
-//   ]
-// }
+
 
