@@ -15,13 +15,11 @@ const Checkout = () => {
     0
   );
 
-  const handleConfirmOrder = () => {
-    setOrderConfirmed(true);
-    dispatch(clearCart());
-    setTimeout(() => {
-      navigate("/");
-    }, 3000); // redirect after 3 seconds
-  };
+ const handleConfirmOrder = () => {
+  setOrderConfirmed(true);
+  dispatch(clearCart());
+};
+
 
   return (
     <div className="min-h-screen bg-black text-yellow-300 flex flex-col items-center justify-center px-4 py-10">
